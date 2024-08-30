@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'rs24_fonts';
+    src: url('../fonts/new_fonts/rs24_fonts.eot?7e4mcm');
+    src: url('../fonts/new_fonts/rs24_fonts.eot?7e4mcm#iefix') format('embedded-opentype'),
+        url('../fonts/new_fonts/rs24_fonts.ttf?7e4mcm') format('truetype'),
+        url('../fonts/new_fonts/rs24_fonts.woff?7e4mcm') format('woff'),
+        url('../fonts/new_fonts/rs24_fonts.svg?7e4mcm#rs24_fonts') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.slidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: #E2E8F1;
+    padding: 25px 20px;
+    transition: all 0.4s ease;
+}
+
+.slidebar:hover {
+    width: 240px;
+}
+
+.slidebar-header {
+    display: flex;
+    align-items: center;
+}
+
+.slidebar-header .short-logo {
+    width: 32px;
+}
+
+.slidebar-header .full-logo {
+    width: 124px
+}
+
+.slidebar-links {
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 0;
+    height: 87%;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.slidebar-links li a{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    color: #204C97;
+    padding: 10px 20px 10px 0;
+    white-space: nowrap;
+    text-decoration: none;
+
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+.slidebar-links li a:hover {
+    background: #C5D0E4;
+    border-radius: 4px;
+}
+
+.icon-slidebar {
+    font-family: 'rs24_fonts';
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.user-account {
+   margin-top: auto; 
+   padding: 12px 10px;
+   margin-left: -10px;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-profile a {
+    color: #204C97;
+    padding: 10px 20px 10px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+
+.user-account .user-profile {
+    display: flex;
+    align-items: center;
+
+}
+
+.body {
+    min-height: 100vh;
+}
